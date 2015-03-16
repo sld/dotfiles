@@ -1,0 +1,33 @@
+[user]
+  email = sld7700@gmail.com
+  name = Idris Y
+[github]
+  user = sld
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = nano
+[alias]
+  st = status
+  sts = status -sb
+  stl = ls-files -m -o --exclude-standard
+  ci = commit
+  br = branch
+  co = checkout
+  cr = clone --recursive
+  df = diff --word-diff
+  unstage = reset --hard HEAD
+  ag = !sh -c 'git ls-files -m -o --exclude-standard | grep $1 | xargs git add --verbose' -
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ll = log --pretty=oneline --graph --abbrev-commit
+  lm = log --pretty=format:'* %s (%h)'
+  lg = log -p
+  g = grep --break --heading --line-number
+  contrib = shortlog --summary --numbered
+[color]
+  ui = auto
+[credential]
+  helper = osxkeychain
+[help]
+  autocorrect = 1
+[push]
+  default = simple
