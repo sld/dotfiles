@@ -1,7 +1,0 @@
-[core]
-	editor = nano
-[user]
-	email = sld7700@gmail.com
-	name = sld
-[push]
-	default = simple
