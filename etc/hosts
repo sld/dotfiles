@@ -1,0 +1,15 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost dev.jetstat.me
+255.255.255.255	broadcasthost
+::1             localhost 
+fe80::1%lo0	localhost
+82.196.0.127	app.rbcitynews.ru
+146.185.156.141 workers.rbcitynews.ru
+192.168.28.2	staging.rbcitynews.ru
+bds11.vdi.mipt.ru localhost
+bds09.vdi.mipt.ru localhost

@@ -18,3 +18,7 @@ plugins=(git ruby rails rvm osx sublime
 
 source $ZSH/oh-my-zsh.sh
 source $CUSTOM_ZSH/pyenv.zsh
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/mineralka/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1

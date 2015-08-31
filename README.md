@@ -4,3 +4,4 @@
 * https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
 * https://github.com/ArtemPyanykh/dotfiles/
 * https://github.com/robbyrussell/oh-my-zsh/
+* https://github.com/paulmillr/dotfiles

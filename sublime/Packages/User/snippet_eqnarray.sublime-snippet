@@ -1,0 +1,14 @@
+<snippet>
+  <description>Eqnarray</description>
+  <content><![CDATA[
+\begin{eqnarray}
+  ${1:this}
+\end{eqnarray}
+]]></content>
+<tabTrigger>eqn</tabTrigger>
+<scope>text.tex.latex</scope>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

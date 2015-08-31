@@ -6,6 +6,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   editor = nano
+  ignorecase = false
 [alias]
   st = status
   sts = status -sb
@@ -22,6 +23,7 @@
   lm = log --pretty=format:'* %s (%h)'
   lg = log -p
   g = grep --break --heading --line-number
+  dc = diff --cached
   contrib = shortlog --summary --numbered
 [color]
   ui = auto
