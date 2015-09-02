@@ -1,7 +1,7 @@
 export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
-function symlink_dotfiles() {
+function symlink_dotfiles {
   # Git
   echo 'Symlinking git dotfiles'
   ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
@@ -13,7 +13,7 @@ function symlink_dotfiles() {
   ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
 }
 
-function install_brew() {
+function install_brew {
   which -s brew
   if [[ $? != 0 ]]; then
     echo 'Installing Homebrew...'
@@ -27,12 +27,12 @@ function install_brew() {
   fi
 }
 
-function install_rvm() {
+function install_rvm {
   curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails
 }
 
 
-symlink_dotfiles()
+symlink_dotfiles
 
 
 # /etc/hosts
@@ -44,14 +44,14 @@ sudo cp etc/hosts /etc/hosts
 if [[ `uname` == 'Darwin' ]]; then
   xcode-select --install
 
-  install_brew()
+  install_brew
 
   brew install htop nano wget
   brew install git
   brew install nginx node
   brew install pyenv
 
-  install_rvm()
+  install_rvm
   rvm install ruby-2.1.1p76
 
   brew cask install dropbox
