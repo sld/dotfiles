@@ -21,6 +21,7 @@ function install_brew() {
     brew tap caskroom/cask
     brew install brew-cask
     brew tap caskroom/versions
+    brew tap homebrew/dupes
     brew update
     brew doctor
   fi
