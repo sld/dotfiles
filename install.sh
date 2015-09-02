@@ -81,3 +81,6 @@ echo 'Applying sublime config...'
   else
     echo "Install Sublime Text http://www.sublimetext.com"
   fi
+
+echo 'Applying iTerm2 config...'
+  cp etc/com.googlecode.iterm2.plist ~/Library/Preferences
