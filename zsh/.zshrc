@@ -34,6 +34,8 @@ if [ -d "$GHC_DOT_APP" ]; then
   export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
 fi
 
-. /Users/mineralka/torch/install/bin/torch-activate
+if [ -d "/Users/mineralka/torch/" ]; then
+  . /Users/mineralka/torch/install/bin/torch-activate
+fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
